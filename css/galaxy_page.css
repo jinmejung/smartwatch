@@ -1,0 +1,219 @@
+/* reset */
+        body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+        body,h1,h2,h3,h4,h5,h6 {font-size:12px;}
+        a {text-decoration:none; color:#333;}
+        img,fieldset {border:none;}
+        ul,ol,li {list-style:none;}
+        strong,em,address {font-style:normal; font-weight:normal;}
+        table {border-collapse:collapse;} 
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+       #gearWrap{
+            width:100%;
+            height:100%;
+            font-family:'Noto Sans KR','nanumgothic','Raleway', sans-serif; 
+        }
+        .clearfix{
+            content:'';
+            display: block;
+            clear:both;
+        }
+        /* main visual */
+        .main_visual{
+            background:url(http://timemecca.img13.kr/design/kr/gear/gear_main_visual.jpg) no-repeat top center;
+            height:620px;
+            background-size:cover;
+            position:relative;
+        }
+        .main_visual .main_tit{
+            position:absolute;
+            top:50%;
+            transform:translateY(-50%);
+            left:17%;
+            color:#fff;
+            font-family:'Noto Sans KR','Raleway', sans-serif; 
+            letter-spacing: -0.5px;
+            text-align: left;
+        }
+        .main_visual .main_tit p{
+            font-size: 22px;
+            font-weight:400;
+        }
+        .main_visual .main_tit h2{
+            font-size:50px;
+            font-weight:600;
+        }
+        /* section wrap */
+        .section_wrap{
+            width:1100px;
+            margin:0 auto;
+            overflow: hidden;
+        }
+        /* select gear */
+        .select_gear{
+            font-family:'Noto Sans KR','Raleway', sans-serif; 
+            margin:60px 0;
+        }
+        .select_gear .select_gear_tit{
+            font-size:40px;
+            font-family:'Raleway', sans-serif;
+            font-weight:800;
+            color:#333;
+            text-align: center;
+        }
+        .select_gear .gear_list {
+            margin:40px 0;
+            display: inline-block;
+             width: 100%;
+        }
+        .select_gear .gear_list li{
+            float:left;
+            width:25%;
+            text-align: center;
+            position: relative;
+        }
+        .select_gear .gear_list li .gear_img{
+            width:95%;
+            background-color:#f1f1f1;
+            margin:0 auto;
+        }
+        .select_gear .gear_list li .gear_img a{
+            display: inline-block;
+            position:relative;
+            width:100%;
+        }
+        .select_gear .gear_list li .gear_img a img{
+            width: 100%;
+            padding: 10px 0;
+        }
+        .select_gear .gear_list li .gear_img a span{
+              background-color: rgba(254, 37, 37, 0.7);
+              width: 100%;
+                left:0;
+                top:0;
+              position: absolute;
+              display: inline;
+              height: 284px;
+              z-index: 80;
+              color: #fff;
+              opacity: 0;
+              -webkit-transition: opacity 0.1s ease-out;
+              -moz-transition: opacity 0.1s ease-out;
+              -ms-transition: opacity 0.1s ease-out;
+              transition: opacity 0.1s ease-out;
+              -webkit-transition-delay: 0.1s;
+              -moz-transition-delay: 0.1s;
+              -ms-transition-delay: 0.1s;
+              transition-delay: 0.1s;
+        }
+        .select_gear .gear_list li .gear_img a span i{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translateX(-50%) translateY(-50%);
+            border-radius: 50%;
+            font-size:24px;
+            color:#fe2525;
+            width:58px;
+            height:58px;
+            line-height: 60px;
+            background-color:#fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        }
+        .select_gear .gear_list li .gear_img a span:hover{
+              opacity: 1;
+              -webkit-transition: opacity 0.2s ease-out;
+              -moz-transition: opacity 0.2s ease-out;
+              -ms-transition: opacity 0.2s ease-out;
+              transition: opacity 0.2s ease-out;
+        }
+        .select_gear .gear_list li .gear_txt{
+            margin-top:10px;
+            letter-spacing: -0.5px;
+            color:#333;
+        }
+        .select_gear .gear_list li .gear_txt h3{
+            font-size:18px;
+            font-weight:600;
+        }
+        .select_gear .gear_list li .gear_txt span{
+            display: block;
+            font-size:14px;
+            font-weight:400;
+            color:#666;
+            line-height:25px;
+        }
+        /* sub wrap */
+        .sub_wrap{
+            width:100%;
+        }
+        .contents_box{
+            margin:50px 0;
+            display:inline-block;
+            position:relative;
+            width: 100%;
+        }
+        .left_img_content > div{
+            float:left;
+        }
+        .right_img_content >div{
+            float:right;
+        }
+        .contents_box .img_box{
+            width:60%;
+        }
+        .contents_box .txt_box{
+            width:40%;
+            font-family:'Noto Sans KR','Raleway', sans-serif; 
+            color:#333;
+        }
+        .contents_box .txt_box .txt_position{
+            position:absolute;
+            top:50%;
+            transform:translateY(-50%);
+            margin-left:60px;
+            text-align: left;
+        }
+        .contents_box .txt_box .txt_position h3{
+            font-size:45px;
+            font-weight:600;
+            line-height:120%;
+        }
+        .contents_box .txt_box .txt_position > span{
+            display: block;
+            font-size:18px;
+            font-weight:600;
+            margin:20px 0;
+        }
+        .contents_box .txt_box .txt_position p{
+            font-size:14px;
+            font-weight:400;
+            color:#666;
+        }
+        .contents_box .txt_box .txt_position a{
+            display: block;
+            border:1px solid #333;
+            font-size:14px;
+            color:#333;
+            text-align: center;
+            width:130px;
+            padding:5px 0;
+            margin-top:30px;
+            font-weight:400;
+            transition:all .4s ease;
+        }
+        .contents_box .txt_box .txt_position a:hover{
+            background-color:#333;
+            color:#fff;
+        }
+        .contents_box .txt_box .txt_position h3 > span{
+            font-family:'Raleway', sans-serif;
+            font-weight:800;
+        }
+        .contents_box .img_box img{
+            width:100%;
+        }
+        .contents_box .full_img{
+            width:100%;
+        }
