@@ -40,6 +40,7 @@
         .main_visual .main_tit p{
             font-size: 18px;
             font-weight: 400;
+            font-family:'Noto Sans KR', sans-serif; 
             text-align:center;
             color:#fff;
             margin-top:20px;
